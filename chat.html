@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <title>chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+  <div class="container mt-5 " style="width:50%;height:400px">
+
+
+
+    <div class="row  bg-dark text-white " style="height:9vh">
+
+      <div class="col-md-1 col-sm-1 text-right align-self-center">
+        <img src="chat3.png" alt="pic" style="width:8vh;height:8vh;" class="image-fluid" />
+      </div>
+
+      <div class="col-md-7 col-sm-11 align-self-center ">
+        <h2>Online ChatGroup</h2>
+      </div>
+
+
+    </div>
+    
+
+
+
+
+    <div class="row mt-1" >
+      <div class="col-3 border-left bg-dark text-white p-2" ,id="participantsDiv" style="height:400px; overflow:auto;">
+        <h5>Participants Info</h5>
+        <hr>
+        <ul id="participantsList">
+
+        </ul>
+
+      </div>
+
+      <div class="col-9  border-right text-right  " id="chatMessagesDiv" style="height:400px; overflow:auto;">
+        
+      </div>
+
+      
+
+    </div>
+
+    <div class="row mt-1 bg-dark Bpart" id="chatForm">
+
+      <div class="col-1 input-group align-self-center text-white">
+        <span class="input-group-addon"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+    </div>
+
+
+      <div class="col-8 align-self-center ">
+        <input class="border form-control text-black" placeholder="message here........." type="text" name="txtChatMessage" id="txtChatMessage" >
+      </div>
+
+      <div class="col-3 align-self-center">
+        <input type="button" class="btn btn-primary button-control" value="send" onclick="sendMessageEventHandler();" />
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"
+    integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w=="
+    crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js" />
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

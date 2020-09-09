@@ -1,0 +1,29 @@
+#chatMessagesDiv
+{
+    background-image: url("12.jpg");
+    background-size: cover;
+    color:aqua;
+    height:400px;
+}
+
+
+.Bpart
+{
+    height:8vh;
+}
+.form-control {
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    border-top-left-radius: 5rem;
+    background-color:white;
+}
+
+.button-control
+{
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    border-top-left-radius: 5rem;
+    
+}
